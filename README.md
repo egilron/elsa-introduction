@@ -19,5 +19,4 @@ git clone https://github.com/ltgoslo/norec_sentence.git
 ## Run the prepare_dataset.ipynb
 This will read the TSA conll data and create a sentence-based table in `data_cache`path.
 
-## Run the doc_sentence_analyze.ipynb
-This extracts documentwise and sentencewise sentiment information
+ ... work in progress ...
