@@ -1,4 +1,4 @@
-# elsa-introduction
+# Elsa-introduction
 ELSA data exploration and modelling as presented in the COLING 2022 paper "Entity-Level Sentiment Analysis (ELSA): An exploratory task survey"
 
 # Obtain the data
@@ -16,7 +16,11 @@ git clone https://github.com/ltgoslo/norec_tsa.git
 git clone https://github.com/ltgoslo/norec_sentence.git
 ```
 
-## Run the prepare_dataset.ipynb
-This will read the TSA conll data and create a sentence-based table in `data_cache`path.
+## Run the 1_prepare_dataset.ipynb
+This will read the TSA conll data and create a sentence-based table in `data_cache` path. Also, each of the text sources are saved to ta text file togeter with information on their named entities and overlapping sentiment targets.
 
- ... work in progress ...
+## Run the 2_resolve-entity_level.ipynb
+This aggregates the collected data to the entity level. For each volitional entity, the relevant document-level, sentiment-level and target-level sentiment information is registered. This information is shared with the annotator who assigns the entity-level sentiment that the text i total conveys towards the entity. If the annotator considers the reckognized named entity to be wrong, the entity is labelled "spurious".
+
+## Run the 3_analyze_annotated.ipynb
+After the manual polarity is assigned for each entity, this notebook reads the results, and counts the hits and misses where the entity is assigned the correct or wrong label be the other sentiment annotations.
