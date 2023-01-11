@@ -1,0 +1,113 @@
+{
+  "builder_name": null,
+  "citation": "",
+  "config_name": null,
+  "dataset_size": null,
+  "description": "",
+  "download_checksums": null,
+  "download_size": null,
+  "features": {
+    "id": {
+      "dtype": "string",
+      "id": null,
+      "_type": "Value"
+    },
+    "tokens": {
+      "feature": {
+        "dtype": "string",
+        "id": null,
+        "_type": "Value"
+      },
+      "length": -1,
+      "id": null,
+      "_type": "Sequence"
+    },
+    "tsa_tags": {
+      "feature": {
+        "num_classes": 5,
+        "names": [
+          "O",
+          "B-targ-Negative",
+          "I-targ-Negative",
+          "B-targ-Positive",
+          "I-targ-Positive"
+        ],
+        "id": null,
+        "_type": "ClassLabel"
+      },
+      "length": -1,
+      "id": null,
+      "_type": "Sequence"
+    },
+    "ne_tags": {
+      "feature": {
+        "num_classes": 5,
+        "names": [
+          "O",
+          "B-ORG",
+          "I-ORG",
+          "B-PER",
+          "I-PER"
+        ],
+        "id": null,
+        "_type": "ClassLabel"
+      },
+      "length": -1,
+      "id": null,
+      "_type": "Sequence"
+    },
+    "elsa_tags": {
+      "feature": {
+        "num_classes": 13,
+        "names": [
+          "O",
+          "B-ORG-Negative",
+          "I-ORG-Negative",
+          "B-PER-Negative",
+          "I-PER-Negative",
+          "B-ORG-Positive",
+          "I-ORG-Positive",
+          "B-PER-Positive",
+          "I-PER-Positive",
+          "B-ORG-Neutral",
+          "I-ORG-Neutral",
+          "B-PER-Neutral",
+          "I-PER-Neutral"
+        ],
+        "id": null,
+        "_type": "ClassLabel"
+      },
+      "length": -1,
+      "id": null,
+      "_type": "Sequence"
+    },
+    "elsapol_tags": {
+      "feature": {
+        "num_classes": 7,
+        "names": [
+          "O",
+          "B-Negative",
+          "I-Negative",
+          "B-Positive",
+          "I-Positive",
+          "B-Neutral",
+          "I-Neutral"
+        ],
+        "id": null,
+        "_type": "ClassLabel"
+      },
+      "length": -1,
+      "id": null,
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "post_processed": null,
+  "post_processing_size": null,
+  "size_in_bytes": null,
+  "splits": null,
+  "supervised_keys": null,
+  "task_templates": null,
+  "version": null
+}

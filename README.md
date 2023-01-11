@@ -24,3 +24,6 @@ This aggregates the collected data to the entity level. For each volitional enti
 
 ## Run the 3_analyze_annotated.ipynb
 After the manual polarity is assigned for each entity, this notebook reads the results, and counts the hits and misses where the entity is assigned the correct or wrong label be the other sentiment annotations.
+# Modelling ELSA
+Since there presently does not exist a manually annotated dataset for ELSA, we create a proxy dataset by combining the manually annotated [Targeted Sentiment Analysis (TSA)](https://github.com/ltgoslo/norec_tsa) dataset with NER inference. This is done in **4_modelling_dataprep.ipynb**.
+

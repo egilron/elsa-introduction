@@ -12,7 +12,7 @@ import random
 from sklearn.metrics import accuracy_score
 
 
-# Helpers for seq classification, from sentence_clf_pt_ds.ipynb
+# Helpers for seq classification
 
 def conll_to_sents(path, separator = "\t"):
     """ Create list of dicts, one per sentence with tokens:list, tags:list and header:str
