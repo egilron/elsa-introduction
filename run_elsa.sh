@@ -29,7 +29,7 @@ model_var='/fp/projects01/ec30/models/xlm-roberta-base'
 model_var='/fp/projects01/ec30/models/flan-t5-base'
 model_var='/fp/projects01/ec30/Cross_lingual_retrieval/models/norbert2'
 model_var='/fp/projects01/ec30/Cross_lingual_retrieval/BRENT_Reader'
-dataset_var='/fp/homes01/u01/ec-egilron/brent-modelling/data/tsa_arrow'
+dataset_var='/fp/homes01/u01/ec-egilron/elsa-introduction/data/ds_elsa'
 
 # Er visst viktig å bruke absolutt path
 echo "xlmr"
@@ -41,7 +41,7 @@ python3 run_sq_label.py \
   --dataset_name $dataset_var \
   --per_device_train_batch_size 32 \
   --task_name tsa-fox \
-  --output_dir '/fp/projects01/ec30/egilron/tsa_xlmr' \
+  --output_dir '/fp/projects01/ec30/egilron/elsa-inro/xlmr' \
   --overwrite_cache True \
   --do_train \
   --num_train_epochs 8 \
@@ -53,7 +53,7 @@ python3 run_sq_label.py \
   --logging_strategy epoch \
   --do_predict \
   --log_level info \
-  --logging_dir '/fp/projects01/ec30/egilron/tsa_xlmr/logs'
+  --logging_dir '/fp/projects01/ec30/egilron/elsa-intro/xlmr/logs'
 
 echo "BRENT"
 echo $(date)
@@ -63,7 +63,7 @@ python3 run_sq_label.py \
   --dataset_name $dataset_var \
   --per_device_train_batch_size 32 \
   --task_name tsa-fox \
-  --output_dir '/fp/projects01/ec30/egilron/tsa_brent' \
+  --output_dir '/fp/projects01/ec30/egilron/elsa-intro/brent' \
   --overwrite_cache True \
   --do_train \
   --num_train_epochs 8 \
@@ -86,7 +86,7 @@ echo $(date)
   --dataset_name $dataset_var \
   --per_device_train_batch_size 32 \
   --task_name tsa-fox \
-  --output_dir '/fp/projects01/ec30/egilron/tsa_norbert2' \
+  --output_dir '/fp/projects01/ec30/egilron/elsa-intro/norbert2' \
   --overwrite_cache True \
   --do_train \
   --num_train_epochs 8 \

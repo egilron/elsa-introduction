@@ -1,0 +1,213 @@
+Starting job 164429 on gpu-4 at Thu Jan 12 19:24:57 CET 2023
+
+Requirement already satisfied: accelerate==0.14.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 1)) (0.14.0)
+Requirement already satisfied: aiohttp==3.8.3 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 2)) (3.8.3)
+Requirement already satisfied: aiosignal==1.3.1 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 3)) (1.3.1)
+Requirement already satisfied: anyio==3.6.2 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 4)) (3.6.2)
+Requirement already satisfied: argon2-cffi==21.3.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 5)) (21.3.0)
+Requirement already satisfied: argon2-cffi-bindings==21.2.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 6)) (21.2.0)
+Requirement already satisfied: async-timeout==4.0.2 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 7)) (4.0.2)
+Requirement already satisfied: asynctest==0.13.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 8)) (0.13.0)
+Requirement already satisfied: attrs==22.1.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 9)) (22.1.0)
+Requirement already satisfied: backcall==0.2.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 10)) (0.2.0)
+Requirement already satisfied: beautifulsoup4==4.11.1 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 11)) (4.11.1)
+Requirement already satisfied: bleach==5.0.1 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 12)) (5.0.1)
+Requirement already satisfied: certifi in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 13)) (2022.12.7)
+Requirement already satisfied: cffi==1.15.1 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 14)) (1.15.1)
+Requirement already satisfied: charset-normalizer==2.1.1 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 15)) (2.1.1)
+Requirement already satisfied: click==8.1.3 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 16)) (8.1.3)
+Requirement already satisfied: conllu==4.5.2 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 17)) (4.5.2)
+Requirement already satisfied: cycler==0.11.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 18)) (0.11.0)
+Requirement already satisfied: datasets==2.3.2 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 19)) (2.3.2)
+Requirement already satisfied: debugpy==1.6.3 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 20)) (1.6.3)
+Requirement already satisfied: decorator==5.1.1 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 21)) (5.1.1)
+Requirement already satisfied: defusedxml==0.7.1 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 22)) (0.7.1)
+Requirement already satisfied: dill==0.3.5.1 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 23)) (0.3.5.1)
+Requirement already satisfied: entrypoints==0.4 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 24)) (0.4)
+Requirement already satisfied: evaluate==0.2.2 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 25)) (0.2.2)
+Requirement already satisfied: fastjsonschema==2.16.2 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 26)) (2.16.2)
+Requirement already satisfied: filelock==3.8.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 27)) (3.8.0)
+Requirement already satisfied: fonttools==4.38.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 28)) (4.38.0)
+Requirement already satisfied: frozenlist==1.3.3 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 29)) (1.3.3)
+Requirement already satisfied: fsspec==2022.11.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 30)) (2022.11.0)
+Requirement already satisfied: huggingface-hub==0.11.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 31)) (0.11.0)
+Requirement already satisfied: idna==3.4 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 32)) (3.4)
+Requirement already satisfied: importlib-metadata==5.1.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 33)) (5.1.0)
+Requirement already satisfied: importlib-resources==5.10.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 34)) (5.10.0)
+Requirement already satisfied: ipykernel==6.16.2 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 35)) (6.16.2)
+Requirement already satisfied: ipython==7.34.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 36)) (7.34.0)
+Requirement already satisfied: ipython-genutils==0.2.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 37)) (0.2.0)
+Requirement already satisfied: ipywidgets==8.0.2 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 38)) (8.0.2)
+Requirement already satisfied: jedi==0.18.2 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 39)) (0.18.2)
+Requirement already satisfied: Jinja2==3.1.2 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 40)) (3.1.2)
+Requirement already satisfied: joblib==1.2.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 41)) (1.2.0)
+Requirement already satisfied: jsonschema==4.17.1 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 42)) (4.17.1)
+Requirement already satisfied: jupyter==1.0.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 43)) (1.0.0)
+Requirement already satisfied: jupyter-console==6.4.4 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 44)) (6.4.4)
+Requirement already satisfied: jupyter-server==1.23.3 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 45)) (1.23.3)
+Requirement already satisfied: jupyter_client==7.4.7 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 46)) (7.4.7)
+Requirement already satisfied: jupyter_core==4.11.2 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 47)) (4.11.2)
+Requirement already satisfied: jupyterlab-pygments==0.2.2 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 48)) (0.2.2)
+Requirement already satisfied: jupyterlab-widgets==3.0.3 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 49)) (3.0.3)
+Requirement already satisfied: kiwisolver==1.4.4 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 50)) (1.4.4)
+Requirement already satisfied: lab==7.2 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 51)) (7.2)
+Requirement already satisfied: MarkupSafe==2.1.1 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 52)) (2.1.1)
+Requirement already satisfied: matplotlib==3.5.3 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 53)) (3.5.3)
+Requirement already satisfied: matplotlib-inline==0.1.6 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 54)) (0.1.6)
+Requirement already satisfied: mistune==2.0.4 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 55)) (2.0.4)
+Requirement already satisfied: multidict==6.0.2 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 56)) (6.0.2)
+Requirement already satisfied: multiprocess==0.70.13 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 57)) (0.70.13)
+Requirement already satisfied: nbclassic==0.4.8 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 58)) (0.4.8)
+Requirement already satisfied: nbclient==0.7.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 59)) (0.7.0)
+Requirement already satisfied: nbconvert==7.2.5 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 60)) (7.2.5)
+Requirement already satisfied: nbformat==5.7.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 61)) (5.7.0)
+Requirement already satisfied: nest-asyncio==1.5.6 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 62)) (1.5.6)
+Requirement already satisfied: nltk==3.7 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 63)) (3.7)
+Requirement already satisfied: notebook==6.5.2 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 64)) (6.5.2)
+Requirement already satisfied: notebook_shim==0.2.2 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 65)) (0.2.2)
+Collecting numpy==1.21.6
+  Using cached numpy-1.21.6-cp38-cp38-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (15.7 MB)
+Requirement already satisfied: nvidia-cublas-cu11==11.10.3.66 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 67)) (11.10.3.66)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu11==11.7.99 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 68)) (11.7.99)
+Requirement already satisfied: nvidia-cuda-runtime-cu11==11.7.99 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 69)) (11.7.99)
+Requirement already satisfied: nvidia-cudnn-cu11==8.5.0.96 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 70)) (8.5.0.96)
+Requirement already satisfied: packaging==21.3 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 71)) (21.3)
+Collecting pandas==1.3.5
+  Using cached pandas-1.3.5-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.5 MB)
+Requirement already satisfied: pandocfilters==1.5.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 73)) (1.5.0)
+Requirement already satisfied: parso==0.8.3 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 74)) (0.8.3)
+Requirement already satisfied: pexpect==4.8.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 75)) (4.8.0)
+Requirement already satisfied: pickleshare==0.7.5 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 76)) (0.7.5)
+Collecting Pillow==9.3.0
+  Using cached Pillow-9.3.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.2 MB)
+Requirement already satisfied: pkgutil_resolve_name==1.3.10 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 78)) (1.3.10)
+Requirement already satisfied: prometheus-client==0.15.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 79)) (0.15.0)
+Requirement already satisfied: prompt-toolkit==3.0.33 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 80)) (3.0.33)
+Collecting protobuf==4.21.9
+  Using cached protobuf-4.21.9-cp37-abi3-manylinux2014_x86_64.whl (408 kB)
+Requirement already satisfied: psutil==5.9.4 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 82)) (5.9.4)
+Requirement already satisfied: ptyprocess==0.7.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 83)) (0.7.0)
+Requirement already satisfied: pyarrow==10.0.1 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 84)) (10.0.1)
+Requirement already satisfied: pycparser==2.21 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 85)) (2.21)
+Requirement already satisfied: Pygments==2.13.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 86)) (2.13.0)
+Requirement already satisfied: pyparsing==3.0.9 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 87)) (3.0.9)
+Requirement already satisfied: pyrsistent==0.19.2 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 88)) (0.19.2)
+Requirement already satisfied: python-dateutil==2.8.2 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 89)) (2.8.2)
+Requirement already satisfied: pytz==2022.6 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 90)) (2022.6)
+Requirement already satisfied: PyYAML==6.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 91)) (6.0)
+Requirement already satisfied: pyzmq==24.0.1 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 92)) (24.0.1)
+Requirement already satisfied: qtconsole==5.4.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 93)) (5.4.0)
+Requirement already satisfied: QtPy==2.3.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 94)) (2.3.0)
+Requirement already satisfied: regex==2022.10.31 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 95)) (2022.10.31)
+Requirement already satisfied: requests==2.28.1 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 96)) (2.28.1)
+Requirement already satisfied: responses==0.18.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 97)) (0.18.0)
+Requirement already satisfied: scikit-learn==1.0.2 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 98)) (1.0.2)
+Collecting scipy==1.7.3
+  Using cached scipy-1.7.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (39.3 MB)
+Requirement already satisfied: Send2Trash==1.8.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 100)) (1.8.0)
+Requirement already satisfied: sentence-transformers==2.2.2 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 101)) (2.2.2)
+Requirement already satisfied: sentencepiece==0.1.97 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 102)) (0.1.97)
+Requirement already satisfied: setfit==0.4.1 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 103)) (0.4.1)
+Requirement already satisfied: seqeval in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 104)) (1.2.2)
+Requirement already satisfied: simplejson==3.18.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 105)) (3.18.0)
+Requirement already satisfied: six==1.16.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 106)) (1.16.0)
+Requirement already satisfied: sniffio==1.3.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 107)) (1.3.0)
+Requirement already satisfied: soupsieve==2.3.2.post1 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 108)) (2.3.2.post1)
+Requirement already satisfied: terminado==0.17.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 109)) (0.17.0)
+Requirement already satisfied: threadpoolctl==3.1.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 110)) (3.1.0)
+Requirement already satisfied: tinycss2==1.2.1 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 111)) (1.2.1)
+Requirement already satisfied: tokenizers==0.13.2 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 112)) (0.13.2)
+Collecting torch==1.13.0
+  Using cached torch-1.13.0-cp38-cp38-manylinux1_x86_64.whl (890.2 MB)
+Requirement already satisfied: torchvision==0.14.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 114)) (0.14.0)
+Requirement already satisfied: tornado==6.2 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 115)) (6.2)
+Requirement already satisfied: tqdm==4.64.1 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 116)) (4.64.1)
+Requirement already satisfied: traitlets==5.5.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 117)) (5.5.0)
+Requirement already satisfied: transformers==4.25 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 118)) (4.25.0)
+Requirement already satisfied: txt2tags==3.7 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 119)) (3.7)
+Collecting typing_extensions==4.4.0
+  Using cached typing_extensions-4.4.0-py3-none-any.whl (26 kB)
+Requirement already satisfied: urllib3==1.26.13 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 121)) (1.26.13)
+Requirement already satisfied: wcwidth==0.2.5 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 122)) (0.2.5)
+Requirement already satisfied: webencodings==0.5.1 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 123)) (0.5.1)
+Requirement already satisfied: websocket-client==1.4.2 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 124)) (1.4.2)
+Requirement already satisfied: widgetsnbextension==4.0.3 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 125)) (4.0.3)
+Requirement already satisfied: xxhash==3.1.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 126)) (3.1.0)
+Requirement already satisfied: yarl==1.8.1 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 127)) (1.8.1)
+Requirement already satisfied: zipp==3.11.0 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from -r requirements.txt (line 128)) (3.11.0)
+Requirement already satisfied: setuptools>=18.5 in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from ipython==7.34.0->-r requirements.txt (line 36)) (49.2.1)
+Requirement already satisfied: wheel in /fp/homes01/u01/ec-egilron/venvs/transformers/lib/python3.8/site-packages (from nvidia-cublas-cu11==11.10.3.66->-r requirements.txt (line 67)) (0.38.4)
+Installing collected packages: numpy, pandas, Pillow, protobuf, scipy, typing-extensions, torch
+Successfully installed Pillow-9.3.0 numpy-1.24.1 pandas-1.3.5 protobuf-4.21.9 scipy-1.7.3 torch-1.13.0 typing-extensions-4.4.0
+WARNING: You are using pip version 20.2.1; however, version 22.3.1 is available.
+You should consider upgrading via the '/fp/homes01/u01/ec-egilron/venvs/transformers/bin/python -m pip install --upgrade pip' command.
+xlmr
+Thu Jan 12 19:26:21 CET 2023
+Traceback (most recent call last):
+  File "run_sq_label.py", line 28, in <module>
+    from src.local_parsers import ModelArguments, DataTrainingArguments
+ModuleNotFoundError: No module named 'src'
+
+Task and CPU usage stats:
+JobID           JobName  AllocCPUS   NTasks     MinCPU MinCPUTask     AveCPU    Elapsed ExitCode 
+------------ ---------- ---------- -------- ---------- ---------- ---------- ---------- -------- 
+164429       elsa-intro          1                                             00:01:38      1:0 
+164429.batch      batch          1        1   00:00:45          0   00:00:45   00:01:38      1:0 
+164429.exte+     extern          1        1   00:00:00          0   00:00:00   00:01:38      0:0 
+
+Memory usage stats:
+JobID            MaxRSS MaxRSSTask     AveRSS MaxPages   MaxPagesTask   AvePages 
+------------ ---------- ---------- ---------- -------- -------------- ---------- 
+164429                                                                           
+164429.batch        80M          0        80M        0              0          0 
+164429.exte+          0          0          0        0              0          0 
+
+Disk usage stats:
+JobID         MaxDiskRead MaxDiskReadTask    AveDiskRead MaxDiskWrite MaxDiskWriteTask   AveDiskWrite 
+------------ ------------ --------------- -------------- ------------ ---------------- -------------- 
+164429                                                                                                
+164429.batch     2826.60M               0       2826.60M     2973.10M                0       2973.10M 
+164429.exte+        0.01M               0          0.01M            0                0              0 
+
+GPU usage stats:
+Successfully retrieved statistics for job: 164429. 
++------------------------------------------------------------------------------+
+| GPU ID: 3                                                                    |
++====================================+=========================================+
+|-----  Execution Stats  ------------+-----------------------------------------|
+| Start Time                         | Thu Jan 12 19:24:57 2023                |
+| End Time                           | Thu Jan 12 19:26:36 2023                |
+| Total Execution Time (sec)         | 98.37                                   |
+| No. of Processes                   | 1                                       |
++-----  Performance Stats  ----------+-----------------------------------------+
+| Energy Consumed (Joules)           | 11496                                   |
+| Power Usage (Watts)                | Avg: 198.612, Max: 223.793, Min: 143... |
+| Max GPU Memory Used (bytes)        | 17126391808                             |
+| SM Clock (MHz)                     | Avg: 1880, Max: 1980, Min: 1695         |
+| Memory Clock (MHz)                 | Avg: 9501, Max: 9501, Min: 9501         |
+| SM Utilization (%)                 | Avg: 75, Max: 100, Min: 0               |
+| Memory Utilization (%)             | Avg: 1, Max: 2, Min: 0                  |
+| PCIe Rx Bandwidth (megabytes)      | Avg: N/A, Max: N/A, Min: N/A            |
+| PCIe Tx Bandwidth (megabytes)      | Avg: N/A, Max: N/A, Min: N/A            |
++-----  Event Stats  ----------------+-----------------------------------------+
+| Single Bit ECC Errors              | 0                                       |
+| Double Bit ECC Errors              | 0                                       |
+| PCIe Replay Warnings               | 0                                       |
+| Critical XID Errors                | 0                                       |
++-----  Slowdown Stats  -------------+-----------------------------------------+
+| Due to - Power (%)                 | 0                                       |
+|        - Thermal (%)               | 0                                       |
+|        - Reliability (%)           | Not Supported                           |
+|        - Board Limit (%)           | Not Supported                           |
+|        - Low Utilization (%)       | Not Supported                           |
+|        - Sync Boost (%)            | 0                                       |
++--  Compute Process Utilization  ---+-----------------------------------------+
+| PID                                | 2990761                                 |
+|     Avg SM Utilization (%)         | 89                                      |
+|     Avg Memory Utilization (%)     | 4                                       |
++-----  Overall Health  -------------+-----------------------------------------+
+| Overall Health                     | Healthy                                 |
++------------------------------------+-----------------------------------------+
+
+
+Job 164429 completed at Thu Jan 12 19:26:36 CET 2023
