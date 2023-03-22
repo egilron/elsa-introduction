@@ -69,13 +69,14 @@ def get_label_list(labels):
 
 # If the labels are of type ClassLabel, they are already integers and we have the map stored somewhere.
 # Otherwise, we have to get the list of labels manually.
-features = dsd["train"][data_args.label_column_name].features
+# data_args.label_column_name
+features = dsd["train"].features
 labels_are_int = isinstance(features[label_column_name].feature, ClassLabel)
 if labels_are_int:
     label_list = features[label_column_name].feature.names
     label_to_id = {i: i for i in range(len(label_list))}
 else:
-    label_list = get_label_list(dsd["train"][data_args.label_column_name]) 
+    label_list = get_label_list(dsd["train"][label_column_name]) 
     label_to_id = {l: i for i, l in enumerate(label_list)}
 
 num_labels = len(label_list)
