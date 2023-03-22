@@ -18,7 +18,7 @@ label_col = {"old_tsa": "tsa_tags",
 
 # Settings dependent on where we are working
 ms, ds, local_out_dir = None, None, None
-WHERE = "hp"
+WHERE = "msi"
 
 
 # Lumi datapaths
@@ -46,7 +46,13 @@ if WHERE == "hp":
     ds = {"elsa": "data/ds_elsa"}
     local_out_dir = "output"
 
-
+# HP
+if WHERE == "msi":
+    ms = {  # Or point to local cache instead
+            "nb-bert-base": "nb-bert-base" ,
+            "xlm-roberta-base":"xlm-roberta-base"}
+    ds = {"elsa": "data/ds_elsa"}
+    local_out_dir = "output"
 
 assert not any([e is None for e in [ms, ds, local_out_dir]]), "ms, ds, and local_out_dir need values set above here"
 # Add training args as needed

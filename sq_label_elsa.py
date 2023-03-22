@@ -222,7 +222,7 @@ def compute_metrics(p):
         for prediction, label in zip(predictions, labels)
     ]
 
-    results = metric.compute(predictions=true_predictions, references=true_labels)
+    results = metric.compute(predictions=true_predictions, references=true_labels,zero_division=0)
     if data_args.return_entity_level_metrics:
         # Unpack nested dictionaries
         final_results = {}
@@ -273,9 +273,9 @@ print("\nEvaluation,",model_args.model_name_or_path)
 # Debug
 # predict_dataset = predict_dataset.select([999])
 
-trainer_predict = trainer.predict(predict_dataset, metric_key_prefix="predict")
-predictions, labels, metrics = trainer_predict
-
+trainer_predict = trainer.predict(predict_dataset, metric_key_prefix="predict",)
+predictions, labels, m = trainer_predict
+metrics.update(m)
 predictions = np.argmax(predictions, axis=2)
 
 # Remove ignored index (special tokens)

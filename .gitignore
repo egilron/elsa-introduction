@@ -1,7 +1,7 @@
 # My ignores
 norec*/
 outputs/printouts/
-
+output/*
 
 
 # Byte-compiled / optimized / DLL files
