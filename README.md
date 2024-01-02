@@ -27,6 +27,8 @@ After the manual polarity is assigned for each entity, this notebook reads the r
 # Modelling ELSA
 Since there presently does not exist a manually annotated dataset for ELSA, we create a proxy dataset by combining the manually annotated [Targeted Sentiment Analysis (TSA)](https://github.com/ltgoslo/norec_tsa) dataset with NER inference. This is done in **4_modelling_dataprep.ipynb**.
 This dataset can be used for training a token classification model. Read more in **4_modelling_dataprep.ipynb**
+## Vulnerability fix
+Due to the vulnerability [described here](https://github.com/advisories/GHSA-3863-2447-669p), we commented out the specification of Transformers version in requirements.txt. The version we used, was `transformers==4.25`. Note that **we have not tested whether the latest Transformers verion will run with our code**.
 
 # Cite the paper
 
